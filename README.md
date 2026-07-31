@@ -52,3 +52,21 @@ Dataset: Online Retail II (UCI Machine Learning Repository)
 * Plotly
 * Scikit-learn
 * SciPy
+
+## Project Visualizations
+
+### Elbow Method
+
+![Elbow Method](images/wcss_plot.png)
+
+### Silhouette method
+
+![Silhouette Method](images/sihouette_plot.png)
+
+### K-Means Cluster Visualization
+
+![K-Means](images/KMeans_PCA_visualization.png)
+
+### DBSCAN Cluster Visualization
+
+![DBSCAN](images/dbscan_clusters.png)
