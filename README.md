@@ -33,10 +33,15 @@ Dataset: Online Retail II (UCI Machine Learning Repository)
 * Davies-Bouldin Index
 * Calinski-Harabasz Index
   
-## Results
-* K-Means achieved the best overall clustering performance based on Silhouette Score, Davies-Bouldin Index and Calinski-Harabasz Index..
-* Four meaningful customer segments were identified.
-* Business recommendations were proposed for each customer segment.
+### Clustering Model Comparison
+
+| Metric | K-Means | Hierarchical | DBSCAN |
+|---|---:|---:|---:|
+| Silhouette Score ↑ | **0.34** | 0.28 | 0.21 |
+| Davies–Bouldin Index ↓ | **1.01** | 1.13 | 2.02 |
+| Calinski–Harabasz Index ↑ | **3313.12** | 2686.36 | 830.95 |
+
+**Result:** K-Means achieved the best performance across all three clustering metrics and was selected with **4 clusters**. Hierarchical clustering also produced 4 clusters, while DBSCAN produced 3 clusters and identified **65 noise points**.
 
 ## Business Recommendations
 * Reward high-value customers through loyalty programs.
