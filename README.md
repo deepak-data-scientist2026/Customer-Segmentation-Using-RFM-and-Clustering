@@ -1,37 +1,31 @@
 # Customer Segmentation using RFM Analysis and Clustering
-
+## Key Results
+- Analyzed 541K+ transactions and created RFM profiles for 4,339 customers
+- Compared K-Means, Hierarchical Clustering, and DBSCAN
+- K-Means selected as the best-performing and most interpretable approach
+- Identified 4 actionable customer segments for targeted engagement and retention strategies
 ## Project Overview
 This project performs customer segmentation using RFM (Recency, Frequency, Monetary) analysis and clustering techniques. Three clustering algorithms—K-Means, Hierarchical Clustering, and DBSCAN—are compared to identify the most suitable model for segmenting customers based on their purchasing behaviour
 ## Dataset
 Dataset: Online Retail II (UCI Machine Learning Repository)
-
 * Time Period: December 2010 – December 2011
-* Transactions: 500,000+
-* Customers: 4,000+
+* Transactions: 541,910
+* Customers: 4,339
 * Domain: UK-based online retail
 ## Objectives
-* Clean and preprocess transactional data.
-* Perform exploratory data analysis (EDA).
-* Generate RFM features for each customer.
-* Apply multiple clustering algorithms.
-* Compare clustering performance using evaluation metrics.
-* Recommend business strategies for different customer segments.
+- Transform transaction-level retail data into customer-level RFM features.
+- Identify meaningful customer segments using clustering techniques.
+- Compare K-Means, Hierarchical Clustering, and DBSCAN using clustering evaluation metrics.
+- Select the most suitable clustering approach based on performance and interpretability.
+- Develop segment-specific strategies for customer engagement and retention.
 ## Methodology
-1. Data Cleaning
-2. EDA
-3. RFM Analysis
-4. Preprocessing
-5. K-Means
-6. Hierarchical Clustering
-7. DBSCAN
-8. Model Comparison
-9. Business Recommendations
-
-## Evaluation Metrics
-
-* Silhouette Score
-* Davies-Bouldin Index
-* Calinski-Harabasz Index
+1. **Data Cleaning** – Removed invalid transactions and handled missing customer records.
+2. **Exploratory Data Analysis** – Examined transaction and customer purchasing patterns.
+3. **RFM Analysis** – Created Recency, Frequency, and Monetary features at the customer level.
+4. **Feature Preprocessing** – Applied log transformation and standardization to address skewness and scale differences.
+5. **Clustering** – Applied K-Means, Hierarchical Clustering, and DBSCAN.
+6. **Model Evaluation** – Compared models using Silhouette Score, Davies–Bouldin Index, and Calinski–Harabasz Index.
+7. **Segmentation & Recommendations** – Selected K-Means with 4 clusters and developed segment-specific business strategies.
   
 ### Clustering Model Comparison
 
