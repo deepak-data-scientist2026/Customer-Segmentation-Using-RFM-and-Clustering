@@ -2,16 +2,17 @@
 ## Key Results
 - Analyzed 541K+ transactions and created RFM profiles for 4,339 customers
 - Compared K-Means, Hierarchical Clustering, and DBSCAN
-- K-Means selected as the best-performing and most interpretable approach
+- K-Means achieved the best performance across all three clustering metrics
 - Identified 4 actionable customer segments for targeted engagement and retention strategies
 ## Project Overview
-This project performs customer segmentation using RFM (Recency, Frequency, Monetary) analysis and clustering techniques. Three clustering algorithms—K-Means, Hierarchical Clustering, and DBSCAN—are compared to identify the most suitable model for segmenting customers based on their purchasing behaviour
+This project performs customer segmentation using RFM (Recency, Frequency, Monetary) analysis and clustering techniques. K-Means, Hierarchical Clustering, and DBSCAN are compared to identify the most suitable approach for segmenting customers based on purchasing behaviour. The resulting segments are used to develop targeted customer engagement and retention strategies.
 ## Dataset
-Dataset: Online Retail II (UCI Machine Learning Repository)
-* Time Period: December 2010 – December 2011
-* Transactions: 541,910
-* Customers: 4,339
-* Domain: UK-based online retail
+
+- **Dataset:** Online Retail II (UCI Machine Learning Repository)
+- **Time Period:** December 2010 – December 2011
+- **Transactions:** 541,910
+- **Customers:** 4,339
+- **Domain:** UK-based online retail
 ## Objectives
 - Transform transaction-level retail data into customer-level RFM features.
 - Identify meaningful customer segments using clustering techniques.
@@ -36,12 +37,16 @@ Dataset: Online Retail II (UCI Machine Learning Repository)
 | Calinski–Harabasz Index ↑ | **3313.12** | 2686.36 | 830.95 |
 
 **Result:** K-Means achieved the best performance across all three clustering metrics and was selected with **4 clusters**. Hierarchical clustering also produced 4 clusters, while DBSCAN produced 3 clusters and identified **65 noise points**.
+### Model Selection
 
+- **Number of clusters:** 4 clusters were chosen based on the Elbow Method and Silhouette Analysis.
+- **Algorithm selection:** K-Means achieved the highest Silhouette Score and Calinski–Harabasz Index, along with the lowest Davies–Bouldin Index among the evaluated models.
 ## Business Recommendations
-* Reward high-value customers through loyalty programs.
-* Encourage regular customers using personalized recommendations.
-* Re-engage inactive customers with promotional campaigns.
-* Target occasional customers using discounts and offers.
+
+- **High-Value Customers:** Reward through loyalty programs and exclusive offers.
+- **Regular Customers:** Encourage repeat purchases using personalized recommendations.
+- **Inactive Customers:** Re-engage through targeted promotional campaigns.
+- **Occasional Customers:** Increase purchase frequency using discounts and offers.
 ## Technologies Used
 * Python
 * Pandas
@@ -58,7 +63,7 @@ Dataset: Online Retail II (UCI Machine Learning Repository)
 
 ![Elbow Method](images/wcss_plot.png)
 
-### Silhouette method
+### Silhouette Analysis
 
 ![Silhouette Method](images/sihouette_plot.png)
 
